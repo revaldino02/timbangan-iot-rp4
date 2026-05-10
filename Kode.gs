@@ -13,14 +13,11 @@ function doGet(e) {
   
   // Menangkap parameter dari URL ESP32
   var berat = e.parameter.berat; 
-  //var jenis = e.parameter.jenis;
-
   var nextRow = sheet.getLastRow() + 1;
   
-  // Mengisi baris baru di Google Sheet sesuai format tabel di foto
+  // Mengisi baris baru di Google Sheet sesuai format
   sheet.getRange("A" + nextRow).setValue(timestamp);
   sheet.getRange("B" + nextRow).setValue(berat);
-  //sheet.getRange("C" + nextRow).setValue(jenis);
-  
+
   return ContentService.createTextOutput("Data berhasil dikirim ke Google Sheet");
 }
