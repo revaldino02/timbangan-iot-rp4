@@ -23,7 +23,7 @@ from hx711 import HX711
 from RPLCD.i2c import CharLCD
 
 # ================= KONFIGURASI GOOGLE SCRIPT =================
-GOOGLE_SCRIPT_ID = "AKfycbwD-gl9NvYlJWm2e_2t-q6TnxEeofifMBSuHHWy8VZZLJuLq-mpUJ5Znmhp3oXd8WtcQg"
+GOOGLE_SCRIPT_ID = ""
 
 # ================= KONFIGURASI PIN GPIO =================
 HX_DOUT    = 17   # GPIO17 = Pin fisik 11
